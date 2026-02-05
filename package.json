@@ -1,0 +1,19 @@
+{
+  "name": "agenciaviajes",
+  "version": "1.0.0",
+  "description": "Proyecto agencia de viajes con Express",
+  "license": "ISC",
+  "author": "Angel Anzatuña",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
