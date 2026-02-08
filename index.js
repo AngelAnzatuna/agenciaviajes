@@ -15,6 +15,8 @@ app.use((req, res, next) => {
 
     res.locals.actualYear = year.getFullYear();
 
+    res.locals.nombreSitio = "Agencia de Viajes"
+
     next();
 })
 
