@@ -4,6 +4,7 @@ import db from './config/db.js';
 
 const app = express();
 
+// Conectar la base de datos
 db.authenticate()
     .then(() => console.log('Base de datos conectada'))
     .catch(error =>  console.log(error))
@@ -14,12 +15,12 @@ const port = process.env.PORT || 3000;
 // Habilitar pug
 app.set('view engine', 'pug');
 
-// Obtener el año actual de forma dinámica
+
 app.use((req, res, next) => {
     const year = new Date();
-
+    // Obtener el año actual
     res.locals.actualYear = year.getFullYear();
-
+    // Nombre sitio
     res.locals.nombreSitio = "Agencia de Viajes"
 
     next();
