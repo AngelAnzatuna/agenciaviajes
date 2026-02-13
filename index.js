@@ -26,6 +26,9 @@ app.use((req, res, next) => {
     next();
 })
 
+// Activar body parse
+app.use(express.urlencoded({extended: true}));
+
 // Definir la carpeta pública
 app.use(express.static('public'));
 
